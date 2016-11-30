@@ -2,25 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>PHP studies</title>
 </head>
 <body>
+<p>
+	this page name is "<strong>
+			<?= $_GET['name'];?>
+		"</strong>
+
+</p>
 	<ul>
+			
 		
 		<li>
-			<?= $task['homework']; ?>
-		</li>
-		<li>
-			<?= $task['breakfast']; ?>
+			<?php
+				echo $city['submit']? "&#9989" : "&#10062";
+			?>
+
 		</li>
 
-		<li>
-			<?= $task['job']; ?>
-		</li>
-		<li>
-			<?= $task['completed']? 'complete' : 'incomplete'; ?>
-		</li>
+		<br>
 
+		
 	</ul>
+	
 </body>
 </html>
