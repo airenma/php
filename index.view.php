@@ -25,6 +25,36 @@
 
 		
 	</ul>
+
+	<p>
+		<?php /*
+		$state = readline('your state please:');
+		switch($state)
+		{
+			case "Uk": case "Ukraine": case "Ukraina":
+			break;
+			default:
+			echo("I dont understand");
+		}*/
+		?>
+	</p>
+
+	<?php 
+	for ($counter = 1; $counter <=100; $counter++)
+	print($counter ."; ");
+	?>
+<br>
+<br>
+	<?php
+		foreach ($pizzas as $topping => $price)
+		{
+			echo ("a whole $topping pizza costs \$
+				$price;" ."<br>");
+			
+			
+		}
+
+	?>
 	
 </body>
 </html>
