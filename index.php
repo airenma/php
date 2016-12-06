@@ -1,19 +1,38 @@
 <?php
 
-$city = [
-	"Vilnius" => "Lithuania",
-	"Kiev" => "Ukraine",
-	"Riga" => "Latvia",
-	"Tallin" => "Esti",
-	"submit" => true
+class Task{
+    public $description;
+
+    public $completed = false;
+
+    public function __construct($description)
+    {
+        $this->description = $description;
+    }
+
+    public function complete()
+    {
+        $this->completed=true;
+    }
+
+    public function isComplete()
+    {
+        return $this->completed;
+    }
+
+
+
+}
+
+$tasks = [
+    new Task('Go to the store'),
+    new Task('Finish my screencast'),
+    new Task('Clean my room'),
+
 ];
 
-$pizzas = [
-"cheese" => 8.99,
-"pepperoni" => 9.99,
-"vegetable" => 10.99,
-"buffalo chicken" => 11.99
+$tasks [0];
 
-];
+
 
 require "index.view.php";
