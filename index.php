@@ -1,37 +1,15 @@
 <?php
 
-class Task{
-    public $description;
+require "functions.php";
+require "class.php";
 
-    public $completed = false;
+$pdo = connectToDB();
 
-    public function __construct($description)
-    {
-        $this->description = $description;
-    }
-
-    public function complete()
-    {
-        $this->completed=true;
-    }
-
-    public function isComplete()
-    {
-        return $this->completed;
-    }
+$tasks = fetchAllTasks ($pdo);
 
 
 
-}
 
-$tasks = [
-    new Task('Go to the store'),
-    new Task('Finish my screencast'),
-    new Task('Clean my room'),
-
-];
-
-$tasks [0];
 
 
 

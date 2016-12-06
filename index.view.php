@@ -6,23 +6,20 @@
 </head>
 <body>
 
-	<ul>
-		<?php foreach($tasks as $task): ?>
+<ul>
+<?php foreach ($tasks as $task) : ?>
 
-		<li>
-			<?php if ($task->completed) : ?>
-				<strike>
-			<?php endif; ?>
-			
-			<?= $task->description; ?>
+	<li>
+		<?php if($task->completed) : ?>
+		<strike><?= $task->description;?></strike>
+		<?php else: ?>
+			<?= $task->description;?>
+		<?php endif;?>
+	</li>
 
-			<?php if ($task->completed) : ?>
-				</strike>
-			<?php endif; ?>
-		</li>
+<?php endforeach?>
 
-		<?php endforeach; ?>
-	</ul>
+</ul>
 
 	
 </body>
