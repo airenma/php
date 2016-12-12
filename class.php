@@ -6,5 +6,8 @@ class Task
 
 	public $completed;
 
-	
+	public function foobar()
+	{
+		return 'foobar';
+	}
 }

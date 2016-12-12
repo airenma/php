@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>php learning</title>
+	<title>Php learning</title>
 </head>
 <body>
 
 <ul>
-<?php foreach ($tasks as $task) : ?>
+	<?php foreach($tasks as $task) : ?>
 
 	<li>
-		<?php if($task->completed) : ?>
-		<strike><?= $task->description;?></strike>
+		<?php if ($task->completed) : ?>
+			<strike><?=$task->description; ?></strike>
 		<?php else: ?>
-			<?= $task->description;?>
-		<?php endif;?>
+			<?= $task->description; ?>
+		<?php endif; ?>
 	</li>
 
-<?php endforeach?>
+	<?php endforeach; ?>
 
 </ul>
 

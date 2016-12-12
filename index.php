@@ -1,16 +1,8 @@
 <?php
 
-require "functions.php";
-require "class.php";
+$query = require 'bootsrap.php';
 
-$pdo = connectToDB();
-
-$tasks = fetchAllTasks ($pdo);
-
-
-
-
-
+$tasks = $query->selectAll('todos');
 
 
 require "index.view.php";
