@@ -6,7 +6,7 @@
 </head>
 <body>
 
-	<h1>About Culture</h1>
+	<p>this page owner is:</p> <h2><?= $name; ?></h2>
 	
 </body>
 </html>
