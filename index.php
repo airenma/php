@@ -1,9 +1,8 @@
 <?php
 
-$query = require 'core/bootstrap.php';
+require 'core/bootstrap.php';
 
 
 
-
-require router::load('routes.php')
-	->direct(request::uri());
+require Router::load('routes.php')
+	->direct(Request::uri());

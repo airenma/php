@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	<h1>About Culture</h1>
-	
-</body>
-</html>
+<?php
+
+$name = 'Laracasts';
+
+require 'views/about-culture.view.php';
