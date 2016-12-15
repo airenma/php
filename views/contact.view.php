@@ -5,7 +5,8 @@
 	<title>Document</title>
 </head>
 <body>
+	
+	<?php require ('partials/head.php'); ?>
 	<h1>Contact</h1>
-	<a href="index.php">home</a>
-</body>
-</html>
+	
+<?php require ('partials/footer.php'); ?>
