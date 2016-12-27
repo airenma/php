@@ -1,0 +1,36 @@
+<?php
+
+class Cart{
+	public $totalPrice;
+	public $products = [];
+	public $akcija = [
+		'socks'=>7,
+		'meat'=>5,
+		'brad'=>3,
+	];
+	
+	public function putToCart($product, $price){
+		$this->products[$product]=$price;
+		$this->totalPrice=$this->totalPrice +$price;
+	}
+
+	public function getTotal(){
+		echo $this->totalPrice ." summa".PHP_EOL;
+	}
+
+	public function PDF($pdf){
+		echo $this->totalPrice * $pdf/100 ." PDF" .PHP_EOL;
+	}
+
+	public function sales(){
+		if(is_array(akcija[]))
+	}
+} //END Class
+
+$cart= new Cart();
+$cart->putToCart('socks', 30);
+$cart->putToCart('meat', 90);
+$cart->putToCart('bread', 4);
+
+$cart->getTotal();
+$cart->PDF(20);
